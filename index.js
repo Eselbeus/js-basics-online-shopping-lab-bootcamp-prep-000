@@ -45,8 +45,10 @@ function total() {
   // write your code here
   let value = 0;
   for (let i = 0; i < cart.length; i++){
-    
+    let current = cart[i];
+    value += current.itemPrice;
   }
+  return value;
 }
 
 function removeFromCart(item) {

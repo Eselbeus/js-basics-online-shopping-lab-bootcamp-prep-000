@@ -53,11 +53,16 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  let itemPresent = false;
   for (let i = 0; i < cart.length; i++){
     let current = cart[i];
     if (cart.itemName === item){
-      cart.spice()
+      cart.splice(0, 1);
+      itemPresent = true;
     }
+  }
+  if (itemPresent != true){
+    
   }
 }
 

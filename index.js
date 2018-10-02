@@ -53,18 +53,16 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  let itemPresent = false;
+  
   for (let i = 0; i < cart.length; i++){
     let current = cart[i];
     if (cart.itemName === item){
       cart.splice(i, 1);
-      itemPresent = true;
       return cart;
     }
   }
-  if (itemPresent != true){
-    return "That item is not in your cart.";
-  }
+  return "That item is not in your cart.";
+  
 }
 
 function placeOrder(cardNumber) {

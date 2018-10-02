@@ -53,7 +53,12 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
-  if 
+  for (let i = 0; i < cart.length; i++){
+    let current = cart[i];
+    if (cart.itemName === item){
+      cart.spice()
+    }
+  }
 }
 
 function placeOrder(cardNumber) {

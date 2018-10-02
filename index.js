@@ -21,6 +21,16 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  var contents = "In you cart, you have ";
+  if (cart.length === 0){
+    "Your shopping cart is empty";
+  }
+  for (let i = 0; i < cart.length; i++){
+    let current = cart[i];
+    contents += `${current.itemName} at $${current.price}`;
+  }
+  contents += ".";
+  return contents;
 }
 
 function total() {

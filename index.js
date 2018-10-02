@@ -21,9 +21,9 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  var contents = "In you cart, you have ";
+  var contents = "In your cart, you have ";
   if (cart.length === 0){
-    return "Your shopping cart is empty";
+    return "Your shopping cart is empty.";
   }
   for (let i = 0; i < cart.length; i++){
     let current = cart[i];

@@ -28,11 +28,11 @@ function viewCart() {
   for (let i = 0; i < cart.length; i++){
     let current = cart[i];
     contents += `${current.itemName} at $${current.itemPrice}`;
-    if (i === cart.length -1){
+    if (i === cart.length -2){
       contents += ", and ";
     }
-    else if (i === cart.length){
-      content += ".";
+    else if (i === cart.length -1){
+      contents += ".";
     }
     else{
       contents += ", ";

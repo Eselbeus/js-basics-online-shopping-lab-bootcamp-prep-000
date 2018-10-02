@@ -10,14 +10,14 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
- var newItem = {
-   itemName: item,
-   itemPrice: Math.floor(Math.random() * Math.floor(100)) +1
- }
- cart.push(newItem);
- return `${item} has been added to your cart.`;
-}
+  // write your code here
+  var newItem = {
+    itemName: item,
+    itemPrice: Math.floor(Math.random() * Math.floor(100)) +1
+  }
+  cart.push(newItem);
+  return `${item} has been added to your cart.`;
+  }
 
 function viewCart() {
   // write your code here
@@ -67,4 +67,5 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
+  
 }

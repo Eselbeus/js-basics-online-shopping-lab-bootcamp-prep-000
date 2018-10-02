@@ -27,7 +27,7 @@ function viewCart() {
   }
   for (let i = 0; i < cart.length; i++){
     let current = cart[i];
-    contents += `${current.itemName} at $${current.price}`;
+    contents += `${current.itemName} at $${current.itemPrice}`;
   }
   contents += ".";
   return contents;
